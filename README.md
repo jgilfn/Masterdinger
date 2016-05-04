@@ -3,8 +3,12 @@
 Masterdinger is an online platform which allows Summoners to see their detailed information about their Mastery Points.
 It also uses that data to compare them to other Summoners from all around the world in a Leaderboard.
 A Summoner may also choose to compare himself to another Summoner.
-
+</br>
 In this documentation we will explain how it works and why it excels at doing its job.
+</br>
+It is an Entry for Riot's API Challenge 2016 for the category of Usability/Practicality because we believe it has potential to be useful for Leage of Legend's community.
+</br>
+It supports all of the public League Of Legend's Regions.
 
 ##Installation
 
