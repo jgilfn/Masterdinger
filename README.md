@@ -89,3 +89,7 @@ For the curious ones, you may also see when was the last match you played with t
 ##Lore
 
 ###404
+
+# Warning
+This project was not yet optimized to the Level 6 and Level 7 Update because by the time the challenge started, it was not yet announced and by the time the challenge ends, the API is not going to be publicly available.
+After the challenge we will be working on that new update.
