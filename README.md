@@ -6,7 +6,7 @@ A Summoner may also choose to compare himself to another Summoner.
 
 In this documentation we will explain how it works and why it excels at doing its job.
 
-#Installation
+##Installation
 
 Masterdinger.com is going to be running on a Debian 8 Server with PHP 7.0.
 These are the packages needed:
@@ -15,22 +15,23 @@ php7.0 php7.0-mysql php7.0-curl php7.0-json apache2
 PHP 7.0 is not yet available in Debian Jessie's repositories, so I added this one:
 > deb http://packages.dotdeb.org jessie all
 
-#Homepage
+##Homepage
 
-#Search
+##Search
 
 In the search page, the Summoner can see how many points does each of his champions own.
 Every champion has its own 'Champion Card' (as we like to call).
+</br>
 ![Champion Card](/garen.png)
 
 
 
-#Leaderboard
+##Leaderboard
 
-#Compare
+##Compare
 
-#Inside the Code
+###Inside the Code
 
-#Lore
+##Lore
 
-#404
+###404
