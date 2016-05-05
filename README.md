@@ -78,6 +78,17 @@ If you want to get even more information, you can hover the '+' button and it wi
 
 ###### When was this champion last played?
 For the curious ones, you may also see when was the last match you played with that champion.
+
+###### Sorting Cards
+You can order Champion Cards by:
+* Highest Score (default)
+* Last Played
+* Highest Highest Grade
+* Lowest Highest Grade
+* Alphabetically (A-Z)
+* Alphabetically (Z-A)
+* Missing Chests
+
 </br>
 
 ##Leaderboard
