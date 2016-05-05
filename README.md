@@ -14,7 +14,7 @@ It supports all of the public League Of Legend's Regions.
 
 Masterdinger.com is going to be running on a Debian 8 Server with PHP 7.0.
 These are the packages needed:
-php7.0 php7.0-mysql php7.0-curl php7.0-json apache2
+php7.0 php7.0-mysql php7.0-curl php7.0-json apache2 php7.0-imagick
 
 PHP 7.0 is not yet available in Debian Jessie's repositories, so I added this one:
 > deb http://packages.dotdeb.org jessie all
