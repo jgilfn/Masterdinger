@@ -123,6 +123,13 @@ Default rows displayed is 5. When you click see more it shows 100 sorted in page
 When you click see more, it will also show different statistics for each champions !WIP!
 <center>![Per Champion Points](/perChampionPoints.png)</center>
 
+######Top Header
+When you click "See More" in any of these tables, a bigger table will be shown with a table highlighting the 3 top Summoners in three different circles displayed with a different size/border/position depending on their position.
+</br>
+When you hover the circle, it will show how many points that Summoner's champion has.
+</br>
+<center>![Leaderboard Top Header](/leaderboardHeader.png)</center>
+
 ##Compare
 
 ###Inside the Code
