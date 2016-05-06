@@ -100,6 +100,22 @@ There are mainly 3 tables:
 * Champion Points
 * Per Champion Points
 
+######Total Points
+Sums the points of every champion from each Summoner and orders the results by highest.
+</br>
+Default rows displayed is 10. When you click see more it shows 100 sorted in pages of 25.
+
+######Champion Points
+Shows the champions with highest points from all of the Summoners.
+</br>
+Default rows displayed is 10. When you click see more it shows 100 sorted in pages of 25.
+
+######Per Champion Points
+Creates a table for every Champion and shows the Summoners who have the highest points.
+</br>
+Default rows displayed is 5. When you click see more it shows 100 sorted in pages of 25.
+When you click see more, it will also show different statistics for each champions !WIP!
+
 ##Compare
 
 ###Inside the Code
