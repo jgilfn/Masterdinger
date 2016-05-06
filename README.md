@@ -100,6 +100,9 @@ There are mainly 3 tables:
 * Champion Points
 * Per Champion Points
 
+<center>![Leaderboard](/leaderboard.png)</center>
+
+
 ######Total Points
 Sums the points of every champion from each Summoner and orders the results by highest.
 </br>
