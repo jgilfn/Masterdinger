@@ -12,7 +12,7 @@ It supports all of the public League Of Legend's Regions.
 
 ##Installation
 
-Masterdinger.com is going to be running on a Debian 8 Server with PHP 7.0.
+Masterdinger.com is going to be running on a Debian 8 Server with PHP 7.0 and Apache 2.4 .
 These are the packages needed:
 php7.0 php7.0-mysql php7.0-curl php7.0-json apache2 php7.0-imagick
 
@@ -92,6 +92,13 @@ You can order Champion Cards by:
 </br>
 
 ##Leaderboard
+
+In the Leaderboard you can check who has the Highest Score from the **users who already searched their name**.
+
+There are mainly 3 tables:
+* Total Points
+* Champion Points
+* Per Champion Points
 
 ##Compare
 
