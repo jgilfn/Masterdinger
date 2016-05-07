@@ -75,7 +75,7 @@ Every champion has its own - as we like to call it - 'Champion Card'.
 <center>![Champion Card](/garen.png)</center>
 </br>
 
-######Searching Options
+######Search Options
 Between the User information and the Champion Cards, you can see a bar where you can:
 * Search for a Champion
 * Sort Cards by:
@@ -89,6 +89,9 @@ Between the User information and the Champion Cards, you can see a bar where you
 *       > Alphabetically (Z-A)
 * Only show cards which Champions did not receive a chest yet.
 * Compare with another Summoner
+</br>
+<center>![Search Options](/searchingOptions.png)</center>
+</br>
 
 ####Champion Card
 
