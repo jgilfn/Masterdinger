@@ -72,7 +72,7 @@ However you can regenerate it by visiting admin/leaderboard_generate.php - Warni
 In the search page, the Summoner can see how many points does each of his champions own.
 Every champion has its own - as we like to call it - 'Champion Card'.
 </br>
-<center>![Champion Card](/garen.png)</center>
+<center>![Champion Card](/Documentation/championCard.png)</center>
 </br>
 
 ######Search Options
@@ -90,7 +90,7 @@ Between the User information and the Champion Cards, you can see a bar where you
 * Only show cards which Champions did not receive a chest yet.
 * Compare to another Summoner
 </br>
-<center>![Search Options](/searchingOptions.png)</center>
+<center>![Search Options](/Documentation/searchingOptions.png)</center>
 </br>
 
 ####Champion Card
@@ -121,7 +121,7 @@ On the right bottom corner, you can see if you have already received a chest wit
 </br>
 
 ### Hover
-![Champion Card](/garen_hover.png)
+![Champion Card](/Documentation/championCardHovered.png)
 </br>
 If you hover the Champion's icon, you may see some extra information such as:
 
@@ -156,35 +156,35 @@ There are mainly 3 tables:
 * Champion Points
 * Per Champion Points
 
-<center>![Leaderboard](/leaderboard.png)</center>
+<center>![Leaderboard](/Documentation/leaderboard.png)</center>
 
 
 ######Total Points
 Sums the points of every champion from each Summoner and orders the results by highest.
 </br>
 Default rows displayed is 10. When you click see more it shows up to 100 sorted in pages of 25.
-<center>![Total Points](/totalPoints.png)</center>
+<center>![Total Points](/Documentation/totalPoints.png)</center>
 
 
 ######Champion Points
 Shows the champions with highest points from all of the Summoners.
 </br>
 Default rows displayed is 10. When you click see more it shows up to 100 sorted in pages of 25.
-<center>![Champion Points](/championPoints.png)</center>
+<center>![Champion Points](/Documentation/championPoints.png)</center>
 
 ######Per Champion Points
 Creates a table for every Champion and shows the Summoners who have the highest points.
 </br>
 Default rows displayed is 5. When you click see more it shows up to 100 sorted in pages of 25.
 When you click see more, it will also show different statistics for each champions !WIP!
-<center>![Per Champion Points](/perChampionPoints.png)</center>
+<center>![Per Champion Points](/Documentation/perChampionPoints.png)</center>
 
 ######Top Header
 When you click "See More" in any of these tables, a bigger table will be shown with a table highlighting the 3 top Summoners in three different circles displayed with a different size/border/position depending on their position.
 </br>
 When you hover the circle, it will show how many points that Summoner's champion has.
 </br>
-<center>![Leaderboard Top Header](/leaderboardHeader.png)</center>
+<center>![Leaderboard Top Header](/Documentation/leaderboardHeader.png)</center>
 
 ##Compare
 
