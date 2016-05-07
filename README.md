@@ -66,10 +66,7 @@ The Leaderboard will be automatically generated. It will add and update rows eac
 </br>
 However you can regenerate it by visiting admin/leaderboard_generate.php - Warning: this may take a lot of time because of the API restriction of 10 requests per second.
 </br>
-
-
-##Homepage
-
+</br>
 ##Search
 
 In the search page, the Summoner can see how many points does each of his champions own.
@@ -77,6 +74,23 @@ Every champion has its own - as we like to call it - 'Champion Card'.
 </br>
 <center>![Champion Card](/garen.png)</center>
 </br>
+
+######Searching Options
+Between the User information and the Champion Cards, you can see a bar where you can:
+* Search for a Champion
+* Sort Cards by:
+*       > Highest Score
+*       > Lowest Score
+*       > Last Played
+*       > Not Played for longest time (inverted Last Played)
+*       > Highest Highest Grade
+*       > Lowest Highest Grade
+*       > Alphabetically (A-Z)
+*       > Alphabetically (Z-A)
+* Only show cards which Champions did not receive a chest yet.
+* Compare with another Summoner
+
+####Champion Card
 
 ###### Level
 At first glance, you can see the Champion's level in the border:
@@ -127,16 +141,6 @@ If you want to get even more information, you can hover the '+' button and it wi
 
 ###### When was this champion last played?
 For the curious ones, you may also see when was the last match you played with that champion.
-
-###### Sorting Cards
-You can order Champion Cards by:
-* Highest Score (default)
-* Last Played
-* Highest Highest Grade
-* Lowest Highest Grade
-* Alphabetically (A-Z)
-* Alphabetically (Z-A)
-* Missing Chests
 
 </br>
 
