@@ -88,7 +88,7 @@ Between the User information and the Champion Cards, you can see a bar where you
 *       > Alphabetically (A-Z)
 *       > Alphabetically (Z-A)
 * Only show cards which Champions did not receive a chest yet.
-* Compare with another Summoner
+* Compare to another Summoner
 </br>
 <center>![Search Options](/searchingOptions.png)</center>
 </br>
