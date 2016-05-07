@@ -21,15 +21,52 @@ These are the packages needed:
 PHP 7.0 is not yet available in Debian Jessie's repositories, so I added this one:
 > deb http://packages.dotdeb.org jessie all
 
-######Instructions
-1. Enter root shell </br> > sudo su
-2. Add the repository </br> > echo "http://packages.dotdeb.org jessie all" >> /etc/apt/sources.list
-3. Get the repository key </br> > wget https://www.dotdeb.org/dotdeb.gpg; apt-key add dotdeb.gpg
-4. Update the repositories list </br> > apt-get update
-5. Install the packages </br> > apt-get install php7.0 php7.0-mysql php7.0-curl php7.0-json apache2 php7.0-imagick
-6. Enable PHP 7.0 </br> > a2enmod php7.0
-7. Restart Apache server </br> > service apache2 restart
+####Instructions
+######Install the packages
+1. Enter root shell </br> $ sudo su
+2. Add the repository </br> # echo "http://packages.dotdeb.org jessie all" >> /etc/apt/sources.list
+3. Get the repository key </br> # wget https://www.dotdeb.org/dotdeb.gpg; apt-key add dotdeb.gpg
+4. Update the repositories list </br> # apt-get update
+5. Install the packages </br> # apt-get install php7.0 php7.0-mysql php7.0-curl php7.0-json apache2 php7.0-imagick
+6. Enable PHP 7.0 </br> # a2enmod php7.0
+7. Restart Apache server </br> # service apache2 restart
 * Recommended but you can use another tool: Install PHPMyAdmin, you can follow this tutorial https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-debian-7
+
+######Configuration
+8. Go to /var/www </br> # cd /var/www
+9. Clone Masterdinger's repository </br> # git clone https://github.com/jgilfn/Masterdinger.git
+10. Configure Apache, edit /etc/apache2/ports.conf </br> # nano /etc/apache2/ports.conf </br> Add this to the bottom of the file (adapt for your needs): </br>
+~~~
+# Masterdinger
+<VirtualHost *:80>
+        ServerAdmin webmaster@localhost
+                ServerName masterdinger.com # Replace this domain by yours
+        DocumentRoot /var/www/Masterdinger
+        <Directory /var/www/Masterdinger/>
+                Options Indexes FollowSymLinks MultiViews
+                Require all granted
+                AllowOverride All
+        </Directory>
+        <Directory /var/www/Masterdinger/admin/>
+                Options Indexes FollowSymLinks MultiViews
+                AllowOverride all
+                Require ip 80.255.11.222 # Replace with your IP, so only you can access this folder
+        </Directory>
+</VirtualHost>
+~~~
+11. Restart Apache server </br> # service apache2 restart
+
+######DB Configuration - PHPMyAdmin
+12. Create a new DB
+13. Import the LoL.sql file in this repository
+12. Edit the "vars.php" file and add your API key and your DB User/Password
+
+######Notes
+The Leaderboard will be automatically generated. It will add and update rows each time a Summoner is searched.
+</br>
+However you can regenerate it by visiting admin/leaderboard_generate.php - Warning: this may take a lot of time because of the API restriction of 10 requests per second.
+</br>
+
 
 ##Homepage
 
