@@ -8,16 +8,28 @@ In this documentation we will explain how it works and why it excels at doing it
 </br>
 It is an Entry for Riot's API Challenge 2016 for the category of Usability/Practicality because we believe it has potential to be useful for Leage of Legend's community.
 </br>
-It supports all of the public League Of Legend's Regions.
+It supports all of the public League Of Legend's Regions (except PBE, due to the lack of API).
 
 ##Installation
+######For server side only
 
 Masterdinger.com is going to be running on a Debian 8 Server with PHP 7.0 and Apache 2.4 .
 These are the packages needed:
-php7.0 php7.0-mysql php7.0-curl php7.0-json apache2 php7.0-imagick
+</br>
+> php7.0 php7.0-mysql php7.0-curl php7.0-json apache2 php7.0-imagick
 
 PHP 7.0 is not yet available in Debian Jessie's repositories, so I added this one:
 > deb http://packages.dotdeb.org jessie all
+
+######Instructions
+1. Enter root shell </br> > sudo su
+2. Add the repository </br> > echo "http://packages.dotdeb.org jessie all" >> /etc/apt/sources.list
+3. Get the repository key </br> > wget https://www.dotdeb.org/dotdeb.gpg; apt-key add dotdeb.gpg
+4. Update the repositories list </br> > apt-get update
+5. Install the packages </br> > apt-get install php7.0 php7.0-mysql php7.0-curl php7.0-json apache2 php7.0-imagick
+6. Enable PHP 7.0 </br> > a2enmod php7.0
+7. Restart Apache server </br> > service apache2 restart
+* Recommended but you can use another tool: Install PHPMyAdmin, you can follow this tutorial https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-debian-7
 
 ##Homepage
 
