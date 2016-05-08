@@ -182,6 +182,8 @@ In there, you can get a view of:
 * Percentage of Highest Grade - Pie chart containing the percentages of each Highest Grades.
 * Chest Granted - Number of Champions who have granted a chest dividing by the Number of total Champions.
 * Percentage of Levels - Pie chart containing the percentage of each Level.
+</br>
+<center>![Leaderboard Top Header](/Documentation/globalStats.png)</center>
 
 ######Per Champion Points
 Creates a table for every Champion and shows the Summoners who have the highest points.
@@ -208,6 +210,8 @@ In there, you can get a view of:
 * Percentage of Highest Grade - Pie chart containing the percentages of each Highest Grades.
 * Chest Granted - Number of Summoners whose Champion has granted a chest dividing by Number of total Summoners who own that Champion.
 * Percentage of Levels - Pie chart containing the percentage of each Level.
+</br>
+<center>![Leaderboard Top Header](/Documentation/championStats.png)</center>
 
 
 ##Compare
