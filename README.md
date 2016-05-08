@@ -165,12 +165,23 @@ Sums the points of every champion from each Summoner and orders the results by h
 Default rows displayed is 10. When you click see more it shows up to 100 sorted in pages of 25.
 <center>![Total Points](/Documentation/totalPoints.png)</center>
 
-
 ######Champion Points
 Shows the champions with highest points from all of the Summoners.
 </br>
 Default rows displayed is 10. When you click see more it shows up to 100 sorted in pages of 25.
 <center>![Champion Points](/Documentation/championPoints.png)</center>
+
+######Global Statistics
+When you click the 'See More' button inside the Champion Points table, it will not only show you a bigger table but also a table with Global Statistics.
+</br>
+In there, you can get a view of:
+* Average Highest Grade - Sum of all Highest Grades from all Champions from all Summoners divided by the number of Total Champions owned by Summoners. (We gave each possible grade a number, in order to be able to divide it)
+* Average Owned Champions - Sum of the number of Champions each Summoner has divided by the number of Total Summoners
+* Average Level - Sum of all levels from all Champions from all Summoners divided by the number of Total Champions owned by Summoners.
+* Average Score - Sum of all Champion Points from all Summoners divided by the number of Total Champions owned by Summoners.
+* Percentage of Highest Grade - Pie chart containing the percentages of each Highest Grades.
+* Chest Granted - Number of Champions who have granted a chest dividing by the Number of total Champions.
+* Percentage of Levels - Pie chart containing the percentage of each Level.
 
 ######Per Champion Points
 Creates a table for every Champion and shows the Summoners who have the highest points.
