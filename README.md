@@ -10,6 +10,9 @@ In this documentation we will explain how it works and why it excels at doing it
 It is an Entry for Riot's API Challenge 2016 for the category of Usability/Practicality because we believe it has potential to be useful for Leage of Legend's community.
 </br>
 It supports all of the public League Of Legend's Regions (except PBE, due to the lack of API).
+</br>
+We plan to keep this platform online forever, so the whole community may interact with it, as we receive feedback and keep developing new features.
+</br>
 
 ##Installation
 ######For server side only
@@ -227,7 +230,7 @@ In there, you can get a view of:
 
 
 ##Compare
-In this page, which can be accessed from the Search page, you can compare a Summoner to another one, per Champion:
+In this page, which can be accessed from the Search page, you can compare a Summoner to another one, which gives you this information per Champion:
 * Points - Enabled by Default
 * Highest Grade - Enabled by Default
 * Level - Disabled by Default
