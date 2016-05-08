@@ -14,7 +14,7 @@ It supports all of the public League Of Legend's Regions (except PBE, due to the
 ##Installation
 ######For server side only
 
-Masterdinger.com is going to be running on a Debian 8 Server with PHP 7.0 and Apache 2.4 .
+Masterdinger.com is running on a Debian 8 Server with PHP 7.0 and Apache 2.4 .
 These are the packages needed:
 </br>
 > php7.0 php7.0-mysql php7.0-curl php7.0-json php7.0-imagick apache2
