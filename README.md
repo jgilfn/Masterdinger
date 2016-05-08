@@ -41,7 +41,7 @@ PHP 7.0 is not yet available in Debian Jessie's repositories, so I added this on
 # Masterdinger
 <VirtualHost *:80>
         ServerAdmin webmaster@localhost
-                ServerName masterdinger.com # Replace this domain by yours
+                ServerName <insert your domain here>
         DocumentRoot /var/www/Masterdinger
         <Directory /var/www/Masterdinger/>
                 Options Indexes FollowSymLinks MultiViews
@@ -51,7 +51,7 @@ PHP 7.0 is not yet available in Debian Jessie's repositories, so I added this on
         <Directory /var/www/Masterdinger/admin/>
                 Options Indexes FollowSymLinks MultiViews
                 AllowOverride all
-                Require ip 80.255.11.222 # Replace with your IP, so only you can access this folder
+                Require ip <insert admin IP here>
         </Directory>
 </VirtualHost>
 ~~~
