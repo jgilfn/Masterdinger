@@ -1,0 +1,1490 @@
+$champion-width: 150px; //Champion card width
+$champion-height: 150px; //Champion card height without icon
+$champion-border: 15px;
+$levelicon-width: 105px;
+$levelicon-height: calc( #{$levelicon-width} * 0.98);
+
+/*General*/
+:focus {overflow: hidden;}
+::-moz-focus-inner {border:0;}
+
+html
+{
+	margin: 0;
+	padding: 0px;
+}
+
+body
+{
+	margin: 0;
+
+	/* Navbar padding */
+	padding-top: 50px;
+
+	position: relative;
+	left: 0;
+
+	background:#ffffff;
+
+
+	font-family: 'Friz Quadrata', serif;
+}
+
+html,body{height:100%;}
+
+html div#preloader
+{
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	overflow: visible;
+	background: #0F1F2F url('http://80.255.11.222/lol/images/ajax-loader.gif') no-repeat center center;
+}
+
+.main
+{
+	text-align:center;
+
+	padding-bottom: 0px;
+}
+
+.main-content
+{
+	/* Navbar padding */
+	height: 100%;
+	min-height: 100%;
+	max-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main .logo
+{
+	margin-bottom:30px;
+	text-align: center;
+}
+.main .logo img
+{
+	width:800px;
+}
+
+.container
+{
+  max-width: 1200px;
+  margin: 0 auto;
+
+  color: #fff;
+}
+
+.clearfix:after
+{
+	clear:both;
+	content:".";
+	display:block;
+	height:0;
+	line-height:0;
+	visibility:hidden;
+}
+
+.block
+{
+  display: block;
+}
+
+/*Search Section*/
+.logo
+{
+  margin-bottom: 70px;
+}
+
+/*Input*/
+.searchInput input
+{
+   background: rgba(0,0,0,0.6);
+   color: #B0A78E;
+   font-size:16px;
+	 width:500px;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   padding-left: 15px;
+   padding-right: 15px;
+
+   position:relative;
+   left:8px;
+
+   border: 1px solid rgba(176, 167, 142, 0.3);
+
+   transition: all 500ms ease-in-out;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #B0A78E;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #B0A78E;
+   opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #B0A78E;
+   opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #B0A78E;
+}
+
+.searchInput input:focus
+{
+   background: rgba(0,0,0,0.7);
+   transition: all 500ms ease-in-out;
+   outline: none;
+   box-shadow:none;
+   border: 1px solid rgba(176, 167, 142, 0.5);
+}
+/**/
+/*Select*/
+.searchInput select
+{
+  background: #0f1f2f;
+  background: -webkit-linear-gradient(#0f1f2f,#090f15);
+  background: -o-linear-gradient(#0f1f2f,#090f15);
+  background: -moz-linear-gradient(#0f1f2f,#090f15);
+  background: linear-gradient(#0f1f2f,#090f15);
+
+  text-align:center;
+
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  position:relative;
+  left:4px;
+
+  border: 0px;
+  outline:none;
+  color:#e4be73;
+
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+
+   transition: all 500ms ease-in-out;
+}
+
+.searchInput select:hover
+{
+	cursor:pointer;
+	color:#B0A78E;
+	transition: all 500ms ease-in-out;
+}
+
+.searchInput select:focus
+{
+  transition: all 500ms ease-in-out;
+
+  outline:none;
+}
+
+.searchInput option
+{
+	text-align:center;
+	background:#0C1722;
+	color: #e4be73;
+	border: none;
+}
+/**/
+/*Button*/
+.searchInput button
+{
+   background: #ba9245;
+   background: -webkit-linear-gradient(#9d7528,#dbb365);
+   background: -o-linear-gradient(#9d7528,#dbb365);
+   background: -moz-linear-gradient(#9d7528,#dbb365);
+   background: linear-gradient(#9d7528,#dbb365);
+
+   color: #0C1722;
+   font-size:16px;
+
+   padding-top: 17px;
+   padding-bottom: 21px;
+   padding-left: 20px;
+   padding-right: 22px;
+
+   border: none;
+
+   transition: all 500ms ease-in-out;
+}
+
+
+/**/
+/**/
+
+/*Features*/
+.features
+{
+	padding-top:20px;
+	background:#ffffff;
+	padding-bottom:40px;
+}
+
+.features h2
+{
+	color:#082c2e;
+	text-transform: uppercase;
+	font-weight:700;
+	text-align:center;
+}
+
+.features img
+{
+	width:100%;
+	margin-bottom:20px;
+}
+
+.features p
+{
+	color:#000;
+	font-size:18px;
+	text-align: justify;
+    text-justify: inter-word;
+}
+
+.helper
+{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.navbar
+{
+	border-radius: 0px !important;
+	border: none !important;
+}
+
+.navbar-default
+{
+	border-radius: 0px !important;
+	border: none !important;
+}
+
+//Mobile-Compatibility
+@media screen and (max-width: 991px)
+{
+    .features .col-md-4
+		{
+			margin-bottom: 6vh;
+		}
+}
+
+@media screen and (max-width: 1200px)
+{
+    .features h2
+		{
+			font-size:25px;
+		}
+}
+
+@media screen and (max-width: 850px)
+{
+    .main .logo img
+		{
+        width:80vw;
+				margin-left: auto;
+				margin-right: auto;
+    }
+
+		.searchInput input
+		{
+        width:70vw;
+    }
+}
+@media screen and (max-width: 450px)
+{
+		.searchInput input
+		{
+				width:90%;
+				font-size: 14px;
+				padding: 3px 6px;
+				position: relative;
+				left:0px;
+		}
+
+		.searchInput select
+		{
+				width:45%;
+				position: relative;
+				left:2px;
+				padding-top: 18px;
+		}
+
+		.searchInput select option
+		{
+			text-align: center;
+		}
+
+		.searchInput button
+		{
+				width:45%;
+				position: relative;
+				left:-3px;
+				padding-top: 18px;
+		}
+}
+
+/* Leaderboard */
+.searchChampion
+{
+	margin-top: 0px;
+}
+
+.searchChampion input
+{
+	background: rgba(0,0,0,0.5);
+    color: #B0A78E;
+    border: 1px solid rgba(176, 167, 142, 0.3);
+    transition: all 500ms ease-in-out;
+	border-radius:0px;
+	width:230px;
+	padding:6px 12px;
+}
+
+.searchChampion input:focus
+{
+	background: rgba(0,0,0,0.7);
+    transition: all 500ms ease-in-out;
+    outline: none;
+    box-shadow:none;
+    border: 1px solid rgba(176, 167, 142, 0.5);
+	outline:none!important;
+	box-shadow:none!important;
+}
+
+/*Tops*/
+#rank0
+{
+	color:#dbb365!important;
+}
+
+#rank1
+{
+	color:#bababa!important;
+}
+
+#rank2
+{
+	color:#BA752A!important;
+}
+
+
+/**/
+/*General Leaderboard's*/
+.leaderboard
+{
+	margin-top: 100px;
+}
+
+.leaderboard .header
+{
+	background: url("http://80.255.11.222/lol/images/navbarBackground.png") no-repeat center center;
+}
+
+.leaderboard .header h2
+{
+	text-align: center;
+	color:#c0ad62;
+	vertical-align:center;
+	font-weight:500;
+	margin:0px 0px;
+	padding:15px 0px;
+}
+
+.leaderboard table
+{
+	background:#EDEDED;
+	min-height:300px;
+}
+
+.leaderboard table th
+{
+	color:#c0ad62;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+	background:rgba(15,31,47, 1);
+	margin:0px 0px;
+	font-weight: 500;
+}
+
+.leaderboard td
+{
+	color:#000000;
+	text-align:center;
+	padding-top:6px;
+	padding-bottom:6px;
+}
+
+.leaderboard .type0
+{
+	background: #cfcfcf;
+}
+
+.leaderboard .btn
+{
+  color:#ffffff;
+	background:#c0ad62;
+	border-radius:0px;
+	transition: all 500ms ease-in-out;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-size:18px;
+	text-shadow:2px 2px rgba(51, 51, 51, 0.2);
+	width:100%;
+}
+
+.leaderboard .btn:hover
+{
+	background:#e4be73;
+	color:#ffffff;
+	transition: all 500ms ease-in-out;
+}
+
+.leaderboard .btn:visited
+{
+	color:#ffffff;
+}
+
+
+/*Champion Leaderboard*/
+.champion-leaderboard
+{
+	height: 200px;
+	background:url("http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ezreal_0.jpg") no-repeat center right;
+	background-size:cover;
+
+	margin-top:50px;
+
+
+	-webkit-filter: grayscale(50%);
+	filter: grayscale(50%);
+
+	transition: all 500ms ease-in-out;
+
+	background-size: 40vw;
+
+	transition-delay: 150ms;
+
+
+}
+
+.champion-leaderboard:hover
+{
+	height: 300px;
+
+
+	transition: all 500ms ease-in-out;
+
+		-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+
+	transition-delay: 0ms;
+
+}
+
+.champion-leaderboard:hover .row .image .btn
+{
+	opacity: 1 !important;
+	transition-delay: 150ms;
+}
+
+.champion-leaderboard .row .image .name
+{
+	color:#e4be73;
+	font-size:40px;
+}
+
+#seemoreName, #tabletitle
+{
+	color:#e4be73;
+	font-size:40px;
+	text-shadow: 0px 0px 10px #000;
+}
+
+.champion-leaderboard .row .image .name-text
+{
+	margin-left:20px;
+	text-shadow:2px 2px rgba(51, 51, 51, 0.5);
+}
+
+.champion-leaderboard .row .image .btn
+{
+	margin-left:20px;
+	background:#c0ad62;
+	color:#ffffff;
+	border-radius:0px;
+	transition: all 500ms ease-in-out;
+	font-size:18px;
+	padding:8px 15px;
+	margin-top: 95px;
+	text-shadow:2px 2px rgba(51, 51, 51, 0.2);
+	-webkit-box-shadow: 0px 0px 35px 1px rgba(51,51,51,0.6);
+	-moz-box-shadow: 0px 0px 35px 1px rgba(51,51,51,0.6);
+	box-shadow: 0px 0px 35px 1px rgba(51,51,51,0.6);
+	opacity: 0;
+	transition-delay: 0ms;
+	position: absolute;
+}
+
+.champion-leaderboard .row .image .btn:hover
+{
+	margin-left:20px;
+	background:#e4be73;
+	color:#ffffff;
+	border-radius:0px;
+	transition: all 500ms ease-in-out;
+}
+
+.row .champion-scores
+{
+	background:#cfcfcf;
+	height:100%;
+	border-bottom:1px solid #c0ad62;
+	position:relative;
+	right:15px;
+	overflow: hidden;
+}
+
+.row .champion-scores .btn {
+	background:#c0ad62;
+	color:#ffffff;
+	font-size:18px;
+	transition: all 500ms ease-in-out;
+
+}
+
+
+.row .champion-scores .btn:hover {
+	background:#e4be73;
+	transition: all 500ms ease-in-out;
+
+}
+
+.champion-scores .header
+{
+	background: url("http://80.255.11.222/lol/images/navbarBackground.png") no-repeat center center;
+}
+
+.champion-scores .row
+{
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+.champion-scores h4
+{
+	color:#c0ad62;
+	text-align:center;
+}
+
+.champion-scores p
+{
+	color:#000000;
+	text-align:center;
+	margin-top:6px;
+	margin-bottom:6px;
+}
+
+.champion-scores .rank1
+{
+	background:#EDEDED;
+	text-align:center;
+}
+
+.seemorebtn
+{
+
+}
+
+.seemorebtn a
+{
+	font-size:25px!important;
+	padding-top:7.5%;
+}
+
+/*Champion Statistics*/
+.champion-statistics
+{
+	margin-top:70px;
+	margin-bottom:70px;
+}
+
+.champion-statistics .container .col-md-8
+{
+	background:#ededed;
+	color:#000000;
+	text-align:center;
+}
+
+.champion-statistics .container .row
+{
+	height:264px;
+}
+
+.champion-statistics .container .row .col-md-4
+{
+	padding:0px 0px;
+	height:100%;
+}
+
+.champion-statistics .container #champStats1 .col-md-4:nth-child(2),.champion-statistics .container #champStats2 .col-md-4:nth-child(1),.champion-statistics .container #champStats2 .col-md-4:nth-child(3)
+{
+	background:#cfcfcf;
+}
+
+.champion-statistics .container .row .col-md-4 h4
+{
+	color:#c0ad62;
+	background:#0B161F;
+	width:100%;
+	margin:0px 0px;
+	padding:10px 0px;
+}
+
+.champion-statistics .container .row .col-md-4 h3
+{
+	font-size:50px;
+	padding-top:55px;
+	padding-bottom:55px;
+	color:#0B161F;
+}
+
+/**/
+
+/*About*/
+.about-content
+{
+	background:rgba(0,0,0, 0.5);
+	min-height: calc(100vh - 70px);
+}
+
+.about-content .container
+{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.about-content h2, .about-content h3, .about-content a
+{
+	color:#e4be73;
+}
+
+.about-content p
+{
+	color:#B0A78E;
+}
+
+.tip
+{
+	-ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+		text-align: left;
+}
+
+#tip
+{
+	-ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+		text-align: right;
+}
+
+.solution
+{
+	-ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+		text-align: left;
+}
+
+#solution
+{
+	-ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+		text-align: right;
+}
+
+.about-content .btn
+{
+   background: rgba(0,0,0,0.6);
+   color:#e4be73;
+   border: 1px solid rgba(176, 167, 142, 0.3);
+   font-size:18px;
+   border-radius:0px!important;
+   transition: all 500ms ease-in-out;
+   padding:8px 15px;
+}
+
+.about-content .btn:hover
+{
+	background: rgba(0,0,0,0.7);
+	border: 1px solid rgba(176, 167, 142, 0.6);
+	color: #B0A78E;
+	border-radius:0px;
+	transition: all 500ms ease-in-out;
+}
+
+/*Search*/
+/*Organization Bar*/
+.organization-bar
+{
+	background: url("http://80.255.11.222/lol/images/navbarBackground.png") no-repeat center center;
+	transition: all 500ms ease-in-out;
+}
+
+.organization-bar .searchChampion input
+{
+	background: rgba(0,0,0,0.3);
+    color: #B0A78E;
+    border: 1px solid rgba(176, 167, 142, 0.3);
+    transition: all 500ms ease-in-out;
+	border-radius:0px;
+	margin-top:15px;
+	margin-bottom:5px;
+	width:230px;
+	padding:6px 12px;
+	float: left;
+}
+
+.organization-bar .searchChampion input:focus
+{
+	background: rgba(0,0,0,0.5);
+    transition: all 500ms ease-in-out;
+    outline: none;
+    box-shadow:none;
+    border: 1px solid rgba(176, 167, 142, 0.5);
+	outline:none!important;
+	box-shadow:none!important;
+}
+
+.organization-bar .order-by select
+{
+	background: rgba(0,0,0,0.3);
+    color: #B0A78E;
+    border: 1px solid rgba(176, 167, 142, 0.3);
+    transition: all 500ms ease-in-out;
+	border-radius:0px;
+	margin-top:15px;
+	margin-bottom:5px;
+}
+
+.organization-bar .order-by select:focus
+{
+	background: rgba(0,0,0,0.5);
+    transition: all 500ms ease-in-out;
+    outline: none;
+    box-shadow:none;
+    border: 1px solid rgba(176, 167, 142, 0.5);
+	outline:none!important;
+	box-shadow:none!important;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #B0A78E;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #B0A78E;
+   opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #B0A78E;
+   opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #B0A78E;
+}
+
+.organization-bar .order-by select option
+{
+	background: #080D12;
+    color: #B0A78E;
+    transition: all 500ms ease-in-out;
+	border-radius:0px;
+
+}
+
+.organization-bar .show-missing
+{
+	font-size:14px;
+	margin-top:21px;
+	color:#B0A78E;
+	text-align:center;
+}
+
+.organization-bar .show-missing label
+{
+	vertical-align:middle;
+	font-weight:normal;
+	padding-left:3px;
+}
+
+.organization-bar .compareTo input
+{
+	background: rgba(0,0,0,0.3);
+    color: #B0A78E;
+    border: 1px solid rgba(176, 167, 142, 0.3);
+    transition: all 500ms ease-in-out;
+	border-radius:0px;
+	width:230px;
+	padding:6px 12px;
+	float: left;
+}
+
+.organization-bar .compareTo input:focus
+{
+	background: rgba(0,0,0,0.5);
+    transition: all 500ms ease-in-out;
+    outline: none;
+    box-shadow:none;
+    border: 1px solid rgba(176, 167, 142, 0.5);
+	outline:none!important;
+	box-shadow:none!important;
+}
+
+.organization-bar .compareTo select
+{
+  background: none;
+
+  text-align:center;
+  padding:6px 12px;
+  border: 0px;
+  outline:none;
+  color:#e4be73;
+
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+
+   transition: all 500ms ease-in-out;
+}
+
+.organization-bar .compareTo select option
+{
+	background: #080D12;
+    color: #B0A78E;
+    transition: all 500ms ease-in-out;
+	border-radius:0px;
+
+}
+
+.barSearch select:hover
+{
+	cursor:pointer;
+	color:#B0A78E;
+	transition: all 500ms ease-in-out;
+}
+
+.barSearch select:focus
+{
+  transition: all 500ms ease-in-out;
+
+  outline:none;
+}
+
+.barSearch option
+{
+	text-align:center;
+	background:#0C1722;
+	color: #e4be73;
+	border: none;
+}
+
+
+
+.organization-bar .compareTo button
+{
+   padding:6px 12px;
+   padding-bottom:12px;
+   background: #ba9245;
+   background: -webkit-linear-gradient(#9d7528,#dbb365);
+   background: -o-linear-gradient(#9d7528,#dbb365);
+   background: -moz-linear-gradient(#9d7528,#dbb365);
+   background: linear-gradient(#9d7528,#dbb365);
+
+   color: #0C1722;
+
+   border: none;
+
+   transition: all 500ms ease-in-out;
+}
+
+/*notfound*/
+.notfound
+{
+	margin-bottom: 30px;
+}
+.notfound h2
+{
+	color:#e4be73;
+	font-size: 50px;
+}
+
+.notfound p
+{
+	color:#B0A78E;
+	font-size:18px;
+}
+/**/
+.user
+{
+  margin-top: 5vh;
+  margin-bottom: 0px;
+
+  padding-top: 2vh;
+  padding-bottom: 7vh;
+  padding-right: 2vw;
+  padding-left: 2vw;
+
+  color: #fff;
+
+  background: none;
+  background: linear-gradient(rgba(0,0,0,0), #0A131A);
+
+
+	position: relative;
+}
+
+.user form {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.user select
+{
+  background: rgba(15,31,47,0.75);
+	border: #fff;
+
+  text-align:center;
+
+  padding-top: 18px;
+  padding-bottom: 17px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  position:relative;
+  left:4px;
+
+  border: 0px;
+  outline:none;
+  color:#e4be73;
+
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+
+   transition: all 500ms ease-in-out;
+}
+
+.user select:hover
+{
+	cursor:pointer;
+	color:#B0A78E;
+	transition: all 500ms ease-in-out;
+}
+
+.user select:focus
+{
+  transition: all 500ms ease-in-out;
+
+  outline:none;
+}
+
+.user option
+{
+	text-align:center;
+	background:#0C1722;
+	color: #e4be73;
+	border: none;
+}
+
+.champion-section
+{
+	background-color:rgba(0,0,0,0.7);
+	border-top:1px solid rgba(176, 167, 142, 0.5);
+	border-bottom:1px solid rgba(176, 167, 142, 0.5);
+}
+
+.champion-section .row {
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+}
+
+.champion {
+
+	background: linear-gradient(180deg, rgba(0,0,0,0) 50%, #09131c 50%);
+	width: $champion-width;
+
+	margin:auto;
+
+	text-align: center;
+
+}
+
+.championBackground {
+	background: #09131c;
+	width: $champion-width;
+	height: $champion-height;
+	z-index: 0;
+	margin: auto;
+}
+
+div.wrapper{
+    display:table-row;
+    height:0px; /* take as little as possible,
+                   while still fitting content */
+}
+
+img
+{
+    display:table-cell;
+    width:100%; /*scale to fit*/
+}
+.bottom
+{
+    display:table-cell;
+    height:100%; /* take as much as possible */
+}
+
+/* Round Photos */
+
+.round {
+		border-radius: 50%;
+		overflow: hidden;
+		width: $champion-width;
+		height: $champion-width;
+		border: none;
+		background: #09131c;
+
+		margin-right: auto;
+		margin-left: auto;
+}
+
+
+.levelinfo {
+	position: absolute;
+
+	background: rgba(0,0,0,0.75);
+	z-index: 3;
+
+	top: $champion-border;
+	left: $champion-border;
+
+	width: calc( #{$champion-width} - #{$champion-border} * 2);
+	height: calc( #{$champion-width} - #{$champion-border} * 2);
+
+	border-radius: 50%;
+
+	opacity: 0;
+
+	transition: all 250ms ease-in-out;
+
+}
+
+.champion-section .championName a
+{
+	color: #dbb365;
+	transition: all 250ms ease-in-out;
+	text-decoration: none!important;
+}
+
+.champion-section .championName a:hover
+{
+	color:#e4be73;
+	transition: all 250ms ease-in-out;
+}
+
+.champion-section .championName a:visited
+{
+	text-decoration: none!important;
+}
+
+
+.levelinfo h5 {
+	margin-bottom: 0px;
+}
+
+.levelinfo h2.level5 {
+	color: #dbb365;
+	margin-bottom: 0px;
+}
+
+.levelinfo a {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.levelinfo a:hover
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.tooltip {
+	z-index: 99999;
+}
+
+.round img {
+		display: block;
+		border-radius: 50%;
+
+		margin-top: $champion-border;
+		margin-bottom: $champion-border;
+
+		width: calc( #{$champion-width} - #{$champion-border} * 2);
+		height: calc( #{$champion-width} - #{$champion-border} * 2);
+}
+
+.user img {
+	height: 128px; width: 128px; margin-left: auto; margin-right: auto; vertical-align: middle;
+}
+
+.round.level5 {
+	background: linear-gradient(#dbb365, #96702a);
+}
+
+.round.level4 {
+	background: linear-gradient(#bababa, #6f6f6f);
+}
+
+.round.level3 {
+	background: linear-gradient(#BA752A, #663200);
+}
+.round.level1,.round.level2 {
+	background: linear-gradient(#ffffff, #cfcfcf);
+}
+
+span.level2, span.level1 {
+	color: #fff;
+	background: none;
+}
+
+span.level3 {
+	color: #BA752A;
+	background: none;
+}
+
+span.level4 {
+	color: #bababa;
+	background: none;
+}
+
+span.level5 {
+	color: #dbb365;
+	background: none;
+}
+
+a.level2, a.level1 {
+	color: #fff;
+	background: none;
+}
+
+a.level3 {
+	color: #BA752A;
+	background: none;
+}
+
+a.level4 {
+	color: #bababa;
+	background: none;
+}
+
+a.level5 {
+	color: #dbb365;
+	background: none;
+}
+
+.parent {
+	position: relative;
+	width: $champion-width;
+	height: calc(#{$champion-width} + #{$champion-height});
+	margin: auto;
+	margin-top: 20px + 10px;
+}
+
+
+.piechart {
+	position: absolute;
+	width: calc(#{$champion-width} + 20px);
+	height: calc(#{$champion-width} + 20px);
+
+	left: calc( 50% - ( 150px + 20px ) / 2);
+	z-index: 2;
+
+}
+
+
+.levelicon {
+	position: absolute;
+
+	height: $levelicon-height;
+	width: $levelicon-width;
+
+	left: calc(#{$champion-width} / 2 - #{$levelicon-width} / 2);
+	top: calc(#{$champion-width} - #{$levelicon-width} * 0.98 / 2);
+
+	z-index: 4;
+	pointer-events: none;
+}
+
+.grade {
+	position: absolute;
+	color: #09131C;
+	background: #cba251;
+
+	width: calc(#{$champion-width} / 2 );
+	height: calc(#{$champion-width} / 2 );
+
+	left: 0;
+	bottom: 0;
+
+	text-align: center;
+}
+
+.grade h3 {
+	margin-top: calc(#{$champion-width} / 2 - 13); //Warning: dirty fix
+	margin-bottom: calc(#{$champion-width} / 2 - 13); //Warning: dirty fix
+	font-size: 35px;
+	color:#ffffff;
+
+}
+
+
+.chest {
+	position: absolute;
+	color: #fff;
+	background: #e4be73;
+
+	width: calc(#{$champion-width} / 2 );
+	height: calc(#{$champion-width} / 2 );
+
+	right: 0;
+	bottom: 0;
+
+	text-align: center;
+	line-height: 76px; //TODO FIX THIS, IT SHOULD BE HALF OF THE CHAMPION WIDTH BUT IT IS NOT CALCULATING
+}
+
+.chest img {
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+	width: calc(#{$champion-width} / 2 - 20px);
+	height: calc(#{$champion-width} / 2 - 20px);
+}
+
+.chest .false {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+/*Compare*/
+
+#grid-basic
+{
+	margin-top:0px!important;
+}
+
+.table .table-header tr
+{
+	color:#c0ad62!important;
+	background:#0B161F!important;
+}
+
+.table .table-header th
+{
+	color:#c0ad62!important;
+	background:#0B161F!important;
+	text-align:center;
+	padding-top:10px;
+	padding-bottom:10px;
+	font-weight: 500;
+}
+
+.table .table-header th:hover
+{
+	background: #0F1F2F !important;
+	color: #B0A78E !important;
+}
+
+.bootgrid-table th>.column-header-anchor
+{
+	color:#c0ad62!important;
+}
+
+.table tbody
+{
+	background-color:#cfcfcf;
+}
+
+.table tbody .text-left
+{
+	text-align:center!important;
+}
+
+.table>tbody>tr>td
+{
+	vertical-align:middle!important;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)
+{
+	background:#ededed!important;
+}
+
+.table tbody tr:hover {
+	background:#DBDBDB!important;
+}
+
+.tinycol
+{
+	width: 5%;
+	text-align: center;
+}
+
+.smallcol
+{
+	width: 10%;
+	text-align: center;
+}
+
+.piccol
+{
+	width: 96px;
+}
+
+
+#grid-basic-header
+{
+	margin-top:70px;
+}
+
+#grid-basic-header input-group
+{
+	border-radius:0px;
+}
+
+#grid-basic-header .input-group span
+{
+	background: #ba9245;
+    background: -webkit-linear-gradient(#9d7528,#dbb365);
+    background: -o-linear-gradient(#9d7528,#dbb365);
+    background: -moz-linear-gradient(#9d7528,#dbb365);
+    background: linear-gradient(#9d7528,#dbb365);
+
+    color: #0C1722;
+
+    border: none;
+	border-radius: 0px;
+
+    transition: all 500ms ease-in-out;
+}
+
+#grid-basic-header input
+{
+	background: rgba(0,0,0,0.6);
+    color: #B0A78E;
+    border: 1px solid rgba(176, 167, 142, 0.3);
+    transition: all 500ms ease-in-out;
+	border-radius:0px;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #B0A78E;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #B0A78E;
+   opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #B0A78E;
+   opacity: 1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #B0A78E;
+}
+
+#grid-basic-header input:focus
+{
+	background: rgba(0,0,0,0.7);
+    transition: all 500ms ease-in-out;
+    outline: none;
+    box-shadow:none;
+    border: 1px solid rgba(176, 167, 142, 0.5);
+}
+
+#grid-basic-header .dropdown button
+{
+  background: #0f1f2f;
+  background: -webkit-linear-gradient(#0f1f2f,#090f15);
+  background: -o-linear-gradient(#0f1f2f,#090f15);
+  background: -moz-linear-gradient(#0f1f2f,#090f15);
+  background: linear-gradient(#0f1f2f,#090f15);
+
+  text-align:center;
+
+  border: 0px;
+  border-radius:0px;
+  outline:none;
+  color:#e4be73;
+
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+
+   transition: all 500ms ease-in-out;
+}
+
+#grid-basic-header .dropdown button:hover
+{
+	cursor:pointer;
+	color:#B0A78E;
+	transition: all 500ms ease-in-out;
+}
+
+#grid-basic-header .dropdown-menu
+{
+	background: rgba(0,0,0,0.8);
+    color:#e4be73;
+    border: 1px solid rgba(176, 167, 142, 0.5);
+    transition: all 500ms ease-in-out;
+	border-radius:0px;
+}
+
+#grid-basic-header .actionBar .btn-group>.btn-group .dropdown-menu .dropdown-item:hover
+{
+	background: rgba(0,0,0,0.5);
+    color:#B0A78E;
+    transition: all 500ms ease-in-out;
+	border-radius:0px;
+}
+
+#grid-basic-footer ul li a
+{
+	border-radius:0px;
+	background: rgba(0,0,0,0.6);
+	color:#e4be73;
+	border: 1px solid rgba(176, 167, 142, 0.3);
+}
+
+#grid-basic-footer ul li:hover a
+{
+	cursor:pointer;
+	color:rgba(0,0,0,0.6);
+	background-color:#e4be73;
+}

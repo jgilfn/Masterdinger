@@ -1,0 +1,183 @@
+.navbar
+{
+	border-radius:0px;
+	border:none;
+
+	background:url("http://80.255.11.222/lol/images/navbarBackground.png") no-repeat center center fixed;
+ background-size: cover;
+}
+
+.navbar-brand img
+{
+	width: 90px;
+	height: 75px;
+	position:relative;
+	bottom:10px;
+	z-index: 10;
+}
+
+.navbar li a
+{
+	text-transform: uppercase;
+	color:#c0ad62!important;
+	margin-left:20px;
+}
+
+.navbar li:hover a
+{
+	color:#B0A78E!important;
+}
+
+.navbar-class
+{
+	background-color: #333333;
+	overflow: hidden;
+}
+
+/*Input*/
+.barSearch input
+{
+   background: rgba(0,0,0,0.6);
+   color: #B0A78E;
+
+   width:300px!important;
+
+   border: 1px solid rgba(176, 167, 142, 0.3);
+   border-radius:0px;
+
+   -webkit-transition:all 500ms ease-in-out;
+
+   transition: all 500ms ease-in-out;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #B0A78E!important;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: #B0A78E!important;
+   opacity: 1!important;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: #B0A78E!important;
+   opacity: 1!important;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: #B0A78E!important;
+}
+
+.barSearch input:focus
+{
+   background: rgba(0,0,0,0.7);
+   -webkit-transition:all 500ms ease-in-out;
+   transition: all 500ms ease-in-out;
+   outline: none;
+   box-shadow:none;
+   border: 1px solid rgba(176, 167, 142, 0.5);
+}
+
+/**/
+/*Select*/
+.barSearch select
+{
+  background: none;
+
+  text-align:center;
+
+  position:relative;
+  left: 0px;
+
+  border: 0px;
+  outline:none;
+  color:#e4be73;
+
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+
+   -webkit-transition:all 500ms ease-in-out;
+
+   transition: all 500ms ease-in-out;
+}
+
+.barSearch select:hover
+{
+	cursor:pointer;
+	color:#B0A78E;
+	-webkit-transition:all 500ms ease-in-out;
+	transition: all 500ms ease-in-out;
+}
+
+.barSearch select:focus
+{
+  -webkit-transition:all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+
+  outline:none;
+}
+
+.barSearch option
+{
+	text-align:center;
+	background:#0C1722;
+	color: #e4be73;
+	border: none;
+}
+/**/
+/*Button*/
+.barSearch button
+{
+   background: #ba9245;
+   background: -webkit-linear-gradient(#9d7528,#dbb365);
+   background: linear-gradient(#9d7528,#dbb365);
+
+   color: #0C1722;
+   font-size:16px;
+
+   padding-bottom:8px;
+   padding-top:8px;
+
+   position:relative;
+   top:3px;
+
+   border: none;
+
+   -webkit-transition:all 500ms ease-in-out;
+
+   transition: all 500ms ease-in-out;
+}
+
+form .tooltip-inner {
+	white-space: nowrap !important;
+}
+
+.compare .input {
+	width: auto !important;
+}
+
+#compareButton
+{
+   background: #ba9245;
+   background: -webkit-linear-gradient(#9d7528,#dbb365);
+   background: linear-gradient(#9d7528,#dbb365);
+
+   color: #0C1722;
+   font-size:16px;
+
+   padding-bottom: 19px;
+   padding-top: 19px;
+
+   position:relative;
+   top: 0px;
+
+   border: none;
+
+	 margin-left: 2px;
+
+   -webkit-transition:all 500ms ease-in-out;
+
+   transition: all 500ms ease-in-out;
+}
+
+
+/**/
+/**/
