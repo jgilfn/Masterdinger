@@ -254,6 +254,7 @@ Every time you search for a Summoner, it will generate a list of Champions. When
 </br>
 If it is, then it will update the row's points. If it is not, then it will create a new row.
 </br>
+Masterdinger also requests the current LoL version for each Region once an hour and saves it in the DB.
 </br>
 You can see the database structure in the /db folder.
 
