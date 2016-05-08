@@ -60,7 +60,7 @@ PHP 7.0 is not yet available in Debian Jessie's repositories, so I added this on
 ######DB Configuration - PHPMyAdmin
 12. Create a new DB
 13. Import the /db/db-structure.sql file in this repository
-12. Edit the "vars.php" file and add your API key and your DB User/Password/Name
+14. Edit the "vars.php" file and add your API key and your DB User/Password/Name
 
 ######Notes
 The Leaderboard will be automatically generated. It will add and update rows each time a Summoner is searched.
@@ -72,7 +72,10 @@ However you can regenerate it by visiting admin/leaderboard_generate.php - Warni
 ##Homepage
 The Homepage contains a Search bar which allows you to search for a Summoner's Mastery information.
 </br>
-It has also a brief description of Masterdinger's main features.
+It has also a brief description of Masterdinger's main features:
+* Search
+* Compare
+* Leaderboard
 </br>
 A random background is shown every time you load a page.
 
@@ -85,17 +88,17 @@ Every champion has its own - as we like to call it - 'Champion Card'.
 </br>
 
 ######Search Options
-Between the User information and the Champion Cards, you can see a bar where you can:
+Between the User information and the Champion Cards, you can see a bar that allows you to:
 * Search for a Champion
 * Sort Cards by:
-*       > Highest Score
-*       > Lowest Score
-*       > Last Played
-*       > Not Played for longest time (inverted Last Played)
-*       > Highest Highest Grade
-*       > Lowest Highest Grade
-*       > Alphabetically (A-Z)
-*       > Alphabetically (Z-A)
+*       --> Highest Score
+*       --> Lowest Score
+*       --> Last Played
+*       --> Not Played for longest time (inverted Last Played)
+*       --> Highest Highest Grade
+*       --> Lowest Highest Grade
+*       --> Alphabetically (A-Z)
+*       --> Alphabetically (Z-A)
 * Only show cards which Champions did not receive a chest yet.
 * Compare to another Summoner
 </br>
