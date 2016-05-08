@@ -17,7 +17,7 @@ It supports all of the public League Of Legend's Regions (except PBE, due to the
 Masterdinger.com is going to be running on a Debian 8 Server with PHP 7.0 and Apache 2.4 .
 These are the packages needed:
 </br>
-> php7.0 php7.0-mysql php7.0-curl php7.0-json apache2 php7.0-imagick
+> php7.0 php7.0-mysql php7.0-curl php7.0-json php7.0-imagick apache2
 
 PHP 7.0 is not yet available in Debian Jessie's repositories, so I added this one:
 > deb http://packages.dotdeb.org jessie all
@@ -36,7 +36,7 @@ PHP 7.0 is not yet available in Debian Jessie's repositories, so I added this on
 ######Configuration
 8. Go to /var/www </br> # cd /var/www
 9. Clone Masterdinger's repository </br> # git clone https://github.com/jgilfn/Masterdinger.git
-10. Configure Apache, edit /etc/apache2/ports.conf </br> # nano /etc/apache2/ports.conf </br> Add this to the bottom of the file (adapt for your needs): </br>
+10. Configure Apache, edit /etc/apache2/ports.conf </br> # nano /etc/apache2/ports.conf </br> Add this to the bottom of the file (adapt for your needs, edit the domain and the admin ip): </br>
 ~~~
 # Masterdinger
 <VirtualHost *:80>
@@ -59,8 +59,8 @@ PHP 7.0 is not yet available in Debian Jessie's repositories, so I added this on
 
 ######DB Configuration - PHPMyAdmin
 12. Create a new DB
-13. Import the LoL.sql file in this repository
-12. Edit the "vars.php" file and add your API key and your DB User/Password
+13. Import the /db/db-structure.sql file in this repository
+12. Edit the "vars.php" file and add your API key and your DB User/Password/Name
 
 ######Notes
 The Leaderboard will be automatically generated. It will add and update rows each time a Summoner is searched.
