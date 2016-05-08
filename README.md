@@ -256,7 +256,17 @@ If it is, then it will update the row's points. If it is not, then it will creat
 </br>
 Masterdinger also requests the current LoL version for each Region once an hour and saves it in the DB.
 </br>
-You can see the database structure in the /db folder.
+You can see the database structure in the /db folder or in the pictures below.
+
+####DB Structure
+######Summoners Table
+<center>![Summoners Table](/Documentation/DBSummoners.png)</center>
+######Champions Table
+<center>![Champions Table](/Documentation/DBChampions.png)</center>
+######Leaderboard Table
+<center>![Leaderboard Table](/Documentation/DBLeaderboard.png)</center>
+######Versions Table
+<center>![Versions Table](/Documentation/DBVersions.png)</center>
 
 ###### Warning
 This project was not yet optimized to the Level 6 and Level 7 Update because by the time the challenge started, it was not yet announced and by the time the challenge ends, the API is not going to be publicly available.
