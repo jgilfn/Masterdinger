@@ -1,4 +1,5 @@
 # Masterdinger
+## http://masterdinger.com
 
 Masterdinger is an online platform which allows Summoners to see their detailed information about their Mastery Points.
 It also uses that data to compare them to other Summoners from all around the world in a Leaderboard.
@@ -197,7 +198,7 @@ In there, you can get a view of:
 Creates a table for every Champion and shows the Summoners who have the highest points.
 </br>
 Default rows displayed is 5. When you click see more it shows up to 100 sorted in pages of 25.
-When you click see more, it will also show different statistics for each champions !WIP!
+When you click see more, it will also show different statistics for each champions
 <center>![Per Champion Points](/Documentation/perChampionPoints.png)</center>
 
 ######Top Header
@@ -223,12 +224,21 @@ In there, you can get a view of:
 
 
 ##Compare
+In this page, which can be accessed from the Search page, you can compare a Summoner to another one, per Champion:
+* Points - Enabled by Default
+* Highest Grade - Enabled by Default
+* Level - Disabled by Default
+* Chest Received - Disabled by Default
+</br>
+<center>![Compare](/Documentation/compare.png)</center>
+</br>
+You can also enable the disabled rows:
+</br>
+<center>![Compare Options](/Documentation/compareOptions.png)</center>
 
-###Inside the Code
-
-##Lore
-
-###404
+###Easter Eggs
+* Try to visit an inexistent page and see the 404 error page. Keep refreshing that page.
+* Try to search for an inexistent Summoner.
 
 ###### Warning
 This project was not yet optimized to the Level 6 and Level 7 Update because by the time the challenge started, it was not yet announced and by the time the challenge ends, the API is not going to be publicly available.
