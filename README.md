@@ -240,6 +240,23 @@ You can also enable the disabled columns:
 * Try to visit an inexistent page and see the 404 error page. Keep refreshing that page.
 * Try to search for an inexistent Summoner.
 
+###Inside the Code
+When you search for a Summoner, it will check if it is already stored in the Database.
+</br>
+If it is, and if it was last updated less than an hour ago, then it will use that (it doesn't need to do any request to the API).
+</br>
+If it is not, or if it was last updated more than an hour ago, it will only request the summoner and mastery API.
+</br>
+If the Champions table in the Database does not have the information about a Champion ID, then it will request to the Champion API and store it.
+</br>
+</br>
+Every time you search for a Summoner, it will generate a list of Champions. When it does that, it will check if that champion for that summoner in that region is saved in the Database.
+</br>
+If it is, then it will update the row's points. If it is not, then it will create a new row.
+</br>
+</br>
+You can see the database structure in the /db folder.
+
 ###### Warning
 This project was not yet optimized to the Level 6 and Level 7 Update because by the time the challenge started, it was not yet announced and by the time the challenge ends, the API is not going to be publicly available.
 After the challenge we will be working on that new update.
