@@ -67,6 +67,14 @@ The Leaderboard will be automatically generated. It will add and update rows eac
 However you can regenerate it by visiting admin/leaderboard_generate.php - Warning: this may take a lot of time because of the API restriction of 10 requests per second.
 </br>
 </br>
+
+##Homepage
+The Homepage contains a Search bar which allows you to search for a Summoner's Mastery information.
+</br>
+It has also a brief description of Masterdinger's main features.
+</br>
+A random background is shown every time you load a page.
+
 ##Search
 
 In the search page, the Summoner can see how many points does each of his champions own.
