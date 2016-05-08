@@ -278,4 +278,51 @@ You can see the database structure in the /db folder or in the pictures below.
 This project was not yet optimized to the Level 6 and Level 7 Update because by the time the challenge started, it was not yet announced and by the time the challenge ends, the API is not going to be publicly available.
 After the challenge we will be working on that new update.
 
+###Challenges faced
+As beginners to the world of PHP and MySQL, we found some problems in our way, here are some:
+
+######Search Page Design
+Designing the Search page was one of the first and critical challenges and it took some time to find a solution.
+</br>
+We wanted to find an easy way to keep all information without showing it all at once.
+</br>
+Then we came with the idea of having a card for each Champion, and that with a little bit of JQuery and CSS we could display the data only when the user wants to see it - by hovering the champion's icon. In that way we could keep the page's look simple and still provide all of the information the user can want.
+</br>
+</br>
+######Search System
+We used the magical powers of PHP in order to be able to use the same code on many pages.
+</br>
+'summoner.php' is a file containing a class that searches, stores and displays data about a Summoner.
+</br>
+'champion.php' is a file containing a class that searches, stores and displays data about a Champion.
+</br>
+With this code, which was initially designed for the Search System, we were able to build the Compare and Leaderboard on top of it, making it easier (but not easy at all) because the base is universal.
+</br>
+It is also easier for fixing bugs, because if you fix it there, you fix it in every other page that uses that class.
+</br>
+######Leaderboard System
+To make the Leaderboard system, we initially came with the idea of basing it on the Summoners MySql table.
+</br>
+It was fast enough to sum all of a player's points and make tables for every champion for 50 summoners.
+</br>
+But then we decided to do a stress test with 2000 summoners and we realised it took 10 minutes to proccess that data...
+</br>
+So we had to design a new system, and then we made a new database table designed only for the leaderboard.
+</br>
+Yes, it is still dependent on the Summoner and Champions table, but only for minor tasks, like retrieving a name of a Champion when you have its ID.
+</br>
+To give you an idea of how much it improved, to generate a leaderboard for 50 summoners in the old way, it took aproximately 5 seconds and in the new way, it took 0,015 seconds.
+</br>
+The first way was mostly based on PHP processing the raw MySQL data and the new way is based on tiny PHP processing and huge MySQL processing the data. MySQL is much better than PHP in processing millions of rows and ordering them (not a surprise).
+</br>
+</br>
+######English Language
+It's our first Documentation page, and English is not our native language.
+</br>
+It's not easy to express ourselves in the right way when you have so little experience of the context you're talking about.
+</br>
+We used pictures to complement the text because, like they say, "a picture is worth a thousand words".
+</br>
+If you have any doubts please check the code, most of it is commented and the other part is not hard to understand.
+</br>
 
