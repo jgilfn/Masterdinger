@@ -232,7 +232,7 @@ In this page, which can be accessed from the Search page, you can compare a Summ
 </br>
 <center>![Compare](/Documentation/compare.png)</center>
 </br>
-You can also enable the disabled rows:
+You can also enable the disabled columns:
 </br>
 <center>![Compare Options](/Documentation/compareOptions.png)</center>
 
