@@ -186,6 +186,19 @@ When you hover the circle, it will show how many points that Summoner's champion
 </br>
 <center>![Leaderboard Top Header](/Documentation/leaderboardHeader.png)</center>
 
+######Champion Statistics
+When you click the 'See More' button inside a Champion Table, it will not only show you a bigger table but also a table with Global Statistics related with that Champion.
+</br>
+In there, you can get a view of:
+* Average Highest Grade - Sum of all Highest Grades for that Champion divided by the number of Total Summoners who have a Highest Grade with that Champion. (We gave each possible grade a number, in order to be able to divide it)
+* Owned Percentage - Number of Summoners who own the Champion divided by the number of Total Summoners
+* Average Level - Sum of all levels divided by the number of Total Summoners who own that Champion.
+* Average Score - Sum of all Champion Points divided by the number of Total Summoners who own that Champion.
+* Percentage of Highest Grade - Pie chart containing the percentages of each Highest Grades.
+* Chest Granted - Number of Summoners whose Champion has granted a chest dividing by Number of total Summoners who own that Champion.
+* Percentage of Levels - Pie chart containing the percentage of each Level.
+
+
 ##Compare
 
 ###Inside the Code
@@ -194,6 +207,8 @@ When you hover the circle, it will show how many points that Summoner's champion
 
 ###404
 
-# Warning
+###### Warning
 This project was not yet optimized to the Level 6 and Level 7 Update because by the time the challenge started, it was not yet announced and by the time the challenge ends, the API is not going to be publicly available.
 After the challenge we will be working on that new update.
+
+
