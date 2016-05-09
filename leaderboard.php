@@ -679,7 +679,7 @@ function showStatistics($id)
      <?php
    } else {
      ?>
-     <h4>Average Owned Champions</h4>
+     <h4>Average Played Champions</h4>
      <h3><?php echo $stats['averageChampionsOwned']; ?></h3>
      <?php
    }
