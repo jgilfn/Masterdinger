@@ -467,7 +467,7 @@ function showChamp($number, $id, $version, $apikey)
      <?php
       //Shows the 3 top summoners
       showTopHeader($champion['Summoners'], $version, $apikey);
-      showStatistics($id);
+      showStatistics($id, $champion['name']);
       ?>
 
     <table id="grid-basic" style="margin-top: 10vh;" class="table table-condensed table-hover table-striped text-center">
@@ -654,7 +654,7 @@ $(this).find("#levelinfo-<?php echo $a;?>").css("opacity", "1");
 
 }
 
-function showStatistics($id)
+function showStatistics($id, $name)
 {
   $stats = ChampionStats($id);
 
@@ -663,7 +663,7 @@ function showStatistics($id)
   <div class="champion-statistics">
   <div class="container">
   <div class="col-md-8 col-md-offset-2">
-    <div class="header"  style="width: 104.1%; margin-left: -2%;"><center><h2 style="color: #e4be73;"><?php if ($id == 0) { echo "Global "; } else { echo "Champion "; } ?>Statistics</h2></center></div>
+    <div class="header"  style="width: 104.1%; margin-left: -2%;"><center><h2 style="color: #e4be73;"><?php if ($id == 0) { echo "Global "; } else { echo $name . " "; } ?>Statistics</h2></center></div>
  <div id="champStats1" class="row">
    <div class="col-md-4 col-sm-4 col-xs-4 averageHG">
      <h4>Average Highest Grade</h4>
@@ -676,11 +676,13 @@ function showStatistics($id)
        ?>
      <h4>Played by</h4>
      <h3><?php echo $stats['percentageOfOwned'] . "%"; ?></h3>
+     <p>of Summoners</p>
      <?php
    } else {
      ?>
      <h4>Average Played Champions</h4>
      <h3><?php echo $stats['averageChampionsOwned']; ?></h3>
+     <p>per Summoner</p>
      <?php
    }
 
@@ -791,8 +793,9 @@ function showStatistics($id)
 
    </div>
    <div class="col-md-4 col-sm-4 col-xs-4 chestPerc">
-     <h4>Chest Granted</h4>
+     <h4>Chest Granted by</h4>
      <h3><?php echo $stats['percentageReceivedChest'] . "%"; ?></h3>
+     <p>of Summoners</p>
    </div>
    <div class="col-md-4 col-sm-4 col-xs-4 LVLPerc">
      <h4>Level %</h4>
