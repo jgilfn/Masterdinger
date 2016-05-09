@@ -54,7 +54,7 @@ include "vars.php";
             <input type="hidden" value="<?php echo $_GET["Summoner2"]; ?>" name="Summoner2"></input>
             <input type="hidden" value="<?php echo $_GET["Region2"]; ?>" name="Region2"></input>
 
-            <input type="checkbox" style="margin-top: 2vh; float:right; clear:both;" onchange="this.form.submit()" id="c1" value="true" name="BothOwned" <?php if (isset($_GET['BothOwned'])) { echo "checked"; }?>/><label style="margin-right: 10px; margin-top: 2vh; float:right;">Only champions owned by both</label>
+            <input type="checkbox" style="margin-top: 2vh; float:right; clear:both;" onchange="this.form.submit()" id="c1" value="true" name="BothOwned" <?php if (isset($_GET['BothOwned'])) { echo "checked"; }?>/><label style="margin-right: 10px; margin-top: 2vh; float:right;">Only champions played by both</label>
 
           </form>
 
