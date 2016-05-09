@@ -70,7 +70,7 @@ PHP 7.0 is not yet available in Debian Jessie's repositories, so I added this on
 > deb http://packages.dotdeb.org jessie all
 
 ####Instructions
-######Install the packages
+#####Install the packages
 1. Enter root shell </br> $ sudo su
 2. Add the repository </br> # echo "http://packages.dotdeb.org jessie all" >> /etc/apt/sources.list
 3. Get the repository key </br> # wget https://www.dotdeb.org/dotdeb.gpg; apt-key add dotdeb.gpg
@@ -80,7 +80,7 @@ PHP 7.0 is not yet available in Debian Jessie's repositories, so I added this on
 7. Restart Apache server </br> # service apache2 restart
 * Recommended but you can use another tool: Install PHPMyAdmin, you can follow this tutorial https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-phpmyadmin-on-debian-7
 
-######Configuration
+#####Configuration
 8. Go to /var/www </br> # cd /var/www
 9. Clone Masterdinger's repository </br> # git clone https://github.com/jgilfn/Masterdinger.git
 10. Configure Apache, edit /etc/apache2/ports.conf </br> # nano /etc/apache2/ports.conf </br> Add this to the bottom of the file (adapt for your needs, edit the domain and the admin ip): </br>
@@ -104,10 +104,23 @@ PHP 7.0 is not yet available in Debian Jessie's repositories, so I added this on
 ~~~
 11. Restart Apache server </br> # service apache2 restart
 
-######DB Configuration - PHPMyAdmin
+#####DB Configuration - PHPMyAdmin
 12. Create a new DB
 13. Import the /db/db-structure.sql file in this repository
 14. Edit the "vars.php" file and add your API key and your DB User/Password/Name
+
+</br>
+You can see the database structure in the /db folder or in the pictures below.
+
+######DB Structure
+######Summoners Table
+<center>![Summoners Table](/Documentation/DBSummoners.png)</center>
+######Champions Table
+<center>![Champions Table](/Documentation/DBChampions.png)</center>
+######Leaderboard Table
+<center>![Leaderboard Table](/Documentation/DBLeaderboard.png)</center>
+######Versions Table
+<center>![Versions Table](/Documentation/DBVersions.png)</center>
 
 ######Notes
 The Leaderboard will be automatically generated. It will add and update rows each time a Summoner is searched.
@@ -307,17 +320,6 @@ If it is, then it will update the row's points. If it is not, then it will creat
 </br>
 Masterdinger also requests the current LoL version for each Region once an hour and saves it in the DB.
 </br>
-You can see the database structure in the /db folder or in the pictures below.
-
-####DB Structure
-######Summoners Table
-<center>![Summoners Table](/Documentation/DBSummoners.png)</center>
-######Champions Table
-<center>![Champions Table](/Documentation/DBChampions.png)</center>
-######Leaderboard Table
-<center>![Leaderboard Table](/Documentation/DBLeaderboard.png)</center>
-######Versions Table
-<center>![Versions Table](/Documentation/DBVersions.png)</center>
 
 ###### Warning
 This project was not yet optimized to the Level 6 and Level 7 Update because by the time the challenge started, it was not yet announced and by the time the challenge ends, the API is not going to be publicly available.
