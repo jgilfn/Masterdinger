@@ -57,6 +57,8 @@ We plan to keep this platform online forever, so the whole community may interac
       * [System] (#search-page-system)
     * [Leaderboard System] (#leaderboard-system)
     * [English Language] (#english-language)
+ * [What's next?] (#whats-next)
+
 
 ##Installation
 ######For server side only
@@ -372,4 +374,14 @@ We used pictures to complement the text because, like they say, "a picture is wo
 </br>
 If you have any doubts please check the code, most of it is commented and the other part is not hard to understand.
 </br>
-
+</br>
+##What's Next?
+Riot API Challenge 2016 may have been the beginning of this project but it is certainly not the end.
+</br>
+Like our friend Heimerdinger says: "Every problem solved is another revealed.", there are always things to improve. There is no such way one can reach perfection, especially in programming.
+</br>
+As mentioned before, we will implement the Level 6 and Level 7 features when it is released (and after the challenge ends).
+</br>
+We will also need to make the website more mobile-friendly and optimize the whole MySQL/PHP System (again).
+</br>
+Let's see where time will take Masterdinger!
