@@ -14,6 +14,50 @@ It supports all of the public League Of Legend's Regions (except PBE, due to the
 We plan to keep this platform online forever, so the whole community may interact with it, as we receive feedback and keep developing new features.
 </br>
 
+##Index
+* [Installation] (#installation)
+  * [Instructions] (#instructions)
+    * [Install the packages] (#install-the-packages)
+    * [Configuration] (#configuration)
+    * [DB Configuration] (#db-configuration---phpmyadmin)
+      * [DB Structure] (#db-structure) 
+    * [Notes] (#notes)
+ 
+* [Homepage] (#homepage)
+
+* [Search] (#search)
+  * [Search Options] (#search-options)
+  * [Champion Card] (#champion-card)
+    * [Level] (#level)
+    * [Champion Title] (#champion-title)
+    * [Highest Grade] (#highest-grade)
+    * [Chests] (#chests)
+    * [Hover] (#hover)
+      * [Level Title] (#level-title)
+      * [Mastery Points] (#mastery-points)
+      * [Level Progress] (#level-progress)
+      * [Last Played] (#last-played)
+ 
+* [Leaderboard] (#leaderboard)
+  * [Total Points] (#total-points)
+  * [Champion Points] (#champion-points)
+    * [Global Statistics] (#global-statistics)
+  * [Per Champion Points] (#per-champion-points)
+    * [Champion Statistics] (#champion-statistics)
+  * [Top Header] (#top-header)
+ 
+* [Compare] (#compare)
+
+* Extra
+  *  [Easter Eggs] (#easter-eggs)
+  *  [Inside the Code] (#inside-the-code)
+  *  [Challenges Faced] (#challenges-faced)
+    * Search Page
+      * [Design] (#search-page-design)
+      * [System] (#search-page-system)
+    * [Leaderboard System] (#leaderboard-system)
+    * [English Language] (#english-language)
+
 ##Installation
 ######For server side only
 
@@ -132,7 +176,7 @@ You may see what is your highest grade with that champion in the left bottom cor
 </br>
 
 ###### Chests
-On the right bottom corner, you can see if you have already received a chest with that champion. If the icon is not black and white, it means that you have already received a chest with that champion.
+On the right bottom corner, you can see if you have already received a chest with that champion. If the icon is not black and white, it means that you have already received a chest with that champion. You can also hover this icon and it will tell you 'Received' or 'Not Received'.
 </br>
 
 ### Hover
@@ -157,7 +201,7 @@ Right below the Mastery Points, there is how many points that champion has in th
 </br>
 If you want to get even more information, you can hover the '+' button and it will show how many points it is missing to reach next level.
 
-###### When was this champion last played?
+###### Last Played
 For the curious ones, you may also see when was the last match you played with that champion.
 
 </br>
