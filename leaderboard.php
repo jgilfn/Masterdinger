@@ -390,15 +390,15 @@ function showAllChamps($number)
    ?>
   <div class="champion-leaderboard" style="background:url('http://ddragon.leagueoflegends.com/cdn/img/champion/splash/<?php echo $champion['key']; ?>_0.jpg') no-repeat top left; background-size: 700px; background-position: 0% 30%;">
   <div class="row content">
-    <div class="col-md-7 image">
+    <div class="col-md-7 col-sm-5  col-xs-5 image">
       <h3 class="name-text name championTitle"><?php echo $champion['name']; ?></h3>
     <h4 class="name-text title"><?php echo $champion['title']; ?></h4>
     </div>
-    <div class="col-md-5 champion-scores">
+    <div class="col-md-5 col-sm-7  col-xs-7 champion-scores">
       <div class="row header">
-        <h4 class="col-md-3">Rank</h4>
-        <h4 class="col-md-6">Player</h4>
-        <h4 class="col-md-3">Points</h4>
+        <h4 class="col-md-3 col-sm-3  col-xs-3">Rank</h4>
+        <h4 class="col-md-6 col-sm-6  col-xs-6">Player</h4>
+        <h4 class="col-md-3 col-sm-3  col-xs-3">Points</h4>
       </div>
 
 
@@ -421,9 +421,9 @@ function showAllChamps($number)
 
        ?>
       <div class="row rank<?php echo $type?>">
-        <p class="col-md-3"><?php echo $a+1; ?></p>
-        <p class="col-md-6"><a href="search.php?Summoner=<?php echo $summoner['name']; ?>&Region=<?php echo $summoner['region']; ?>"><?php echo $summoner['name']; ?> (<?php echo mb_strtoupper($summoner['region']); ?>)</a></p>
-        <p class="col-md-3"><?php echo $summoner['points']; ?></p>
+        <p class="col-md-3 col-sm-3 col-xs-3"><?php echo $a+1; ?></p>
+        <p class="col-md-6 col-sm-6  col-xs-6"><a href="search.php?Summoner=<?php echo $summoner['name']; ?>&Region=<?php echo $summoner['region']; ?>"><?php echo $summoner['name']; ?> (<?php echo mb_strtoupper($summoner['region']); ?>)</a></p>
+        <p class="col-md-3 col-sm-3  col-xs-3"><?php echo $summoner['points']; ?></p>
       </div>
 
       <?php
