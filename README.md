@@ -190,10 +190,10 @@ Default rows displayed is 10. When you click see more it shows up to 100 sorted 
 When you click the 'See More' button inside the Champion Points table, it will not only show you a bigger table but also a table with Global Statistics.
 </br>
 In there, you can get a view of:
-* Average Highest Grade - Sum of all Highest Grades from all Champions from all Summoners divided by the number of Total Champions owned by Summoners. (We gave each possible grade a number, in order to be able to divide it)
-* Average Owned Champions - Sum of the number of Champions each Summoner has divided by the number of Total Summoners
-* Average Level - Sum of all levels from all Champions from all Summoners divided by the number of Total Champions owned by Summoners.
-* Average Score - Sum of all Champion Points from all Summoners divided by the number of Total Champions owned by Summoners.
+* Average Highest Grade - Sum of all Highest Grades from all Champions from all Summoners divided by the number of Total Champions played by Summoners. (We gave each possible grade a number, in order to be able to divide it)
+* Average Played Champions - Sum of the number of Champions each Summoner has divided by the number of Total Summoners
+* Average Level - Sum of all levels from all Champions from all Summoners divided by the number of Total Champions played by Summoners.
+* Average Score - Sum of all Champion Points from all Summoners divided by the number of Total Champions played by Summoners.
 * Percentage of Highest Grade - Pie chart containing the percentages of each Highest Grades.
 * Chest Granted - Number of Champions who have granted a chest dividing by the Number of total Champions.
 * Percentage of Levels - Pie chart containing the percentage of each Level.
@@ -219,11 +219,11 @@ When you click the 'See More' button inside a Champion Table, it will not only s
 </br>
 In there, you can get a view of:
 * Average Highest Grade - Sum of all Highest Grades for that Champion divided by the number of Total Summoners who have a Highest Grade with that Champion. (We gave each possible grade a number, in order to be able to divide it)
-* Owned Percentage - Number of Summoners who own the Champion divided by the number of Total Summoners
-* Average Level - Sum of all levels divided by the number of Total Summoners who own that Champion.
+* Played Percentage - Number of Summoners who played the Champion divided by the number of Total Summoners
+* Average Level - Sum of all levels divided by the number of Total Summoners who played that Champion.
 * Average Score - Sum of all Champion Points divided by the number of Total Summoners who own that Champion.
 * Percentage of Highest Grade - Pie chart containing the percentages of each Highest Grades.
-* Chest Granted - Number of Summoners whose Champion has granted a chest dividing by Number of total Summoners who own that Champion.
+* Chest Granted - Number of Summoners whose Champion has granted a chest dividing by Number of total Summoners who played that Champion.
 * Percentage of Levels - Pie chart containing the percentage of each Level.
 </br>
 <center>![Leaderboard Top Header](/Documentation/championStats.png)</center>
