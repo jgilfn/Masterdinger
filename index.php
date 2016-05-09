@@ -55,7 +55,7 @@
 			<img src="images/vs.png"/>
 			<p>Compare two Summoners to see who has more points, highest grade and highest level. Do not confuse this with who's the best player.</p>
       <p>This can be accessed from the search page, after you search one Summoner you can compare it to the other.</p>
-      <p>Just look at the bar below your Summoner info, find the Compare input, type in your name, select region and you're ready to go!</p>
+      <p>Just look at the bar below your Summoner info, find the Compare input, type in your Summoner Name, select the Region and you're ready to click the compare button!</p>
 		</div>
 		<div class="col-md-4">
 			<h2>Check the Leaderboard</h2>
