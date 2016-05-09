@@ -674,7 +674,7 @@ function showStatistics($id)
      <?php if ($id != 0)
      {
        ?>
-     <h4>Owned by</h4>
+     <h4>Played by</h4>
      <h3><?php echo $stats['percentageOfOwned'] . "%"; ?></h3>
      <?php
    } else {
