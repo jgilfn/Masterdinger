@@ -384,4 +384,6 @@ As mentioned before, we will implement the Level 6 and Level 7 features when it 
 </br>
 We will also need to make the website more mobile-friendly and optimize the whole MySQL/PHP System (again).
 </br>
+Maybe we can also implement other APIs apart from the Champion Mastery/Summoner/Champion?
+</br>
 Let's see where time will take Masterdinger!
