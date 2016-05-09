@@ -174,16 +174,16 @@ There are mainly 3 tables:
 <center>![Leaderboard](/Documentation/leaderboard.png)</center>
 
 
-######Total Points
+####Total Points
 Sums the points of every champion from each Summoner and orders the results by highest.
 </br>
-Default rows displayed is 10. When you click see more it shows up to 100 sorted in pages of 25.
+Default rows displayed is 10. When you click 'See More' it shows up to 100 sorted in pages of 25.
 <center>![Total Points](/Documentation/totalPoints.png)</center>
 
-######Champion Points
+####Champion Points
 Shows the champions with highest points from all of the Summoners.
 </br>
-Default rows displayed is 10. When you click see more it shows up to 100 sorted in pages of 25.
+Default rows displayed is 10. When you click 'See More' it shows up to 100 sorted in pages of 25.
 <center>![Champion Points](/Documentation/championPoints.png)</center>
 
 ######Global Statistics
@@ -200,19 +200,12 @@ In there, you can get a view of:
 </br>
 <center>![Leaderboard Top Header](/Documentation/globalStats.png)</center>
 
-######Per Champion Points
+####Per Champion Points
 Creates a table for every Champion and shows the Summoners who have the highest points.
 </br>
-Default rows displayed is 5. When you click see more it shows up to 100 sorted in pages of 25.
-When you click see more, it will also show different statistics for each champions
+Default rows displayed is 5. When you click 'See More' it shows up to 100 sorted in pages of 25.
+When you hover the table and click 'See More', it will also show different statistics for each champions
 <center>![Per Champion Points](/Documentation/perChampionPoints.png)</center>
-
-######Top Header
-When you click "See More" in any of these tables, a bigger table will be shown with a table highlighting the 3 top Summoners in three different circles displayed with a different size/border/position depending on their position.
-</br>
-When you hover the circle, it will show how many points that Summoner's champion has.
-</br>
-<center>![Leaderboard Top Header](/Documentation/leaderboardHeader.png)</center>
 
 ######Champion Statistics
 When you click the 'See More' button inside a Champion Table, it will not only show you a bigger table but also a table with Global Statistics related with that Champion.
@@ -227,6 +220,14 @@ In there, you can get a view of:
 * Percentage of Levels - Pie chart containing the percentage of each Level.
 </br>
 <center>![Leaderboard Top Header](/Documentation/championStats.png)</center>
+
+
+######Top Header
+When you click "See More" in any of these tables, a bigger table will be shown with a table highlighting the 3 top Summoners in three different circles displayed with a different size/border/position depending on their position.
+</br>
+When you hover the circle, it will show how many points that Summoner's champion has.
+</br>
+<center>![Leaderboard Top Header](/Documentation/leaderboardHeader.png)</center>
 
 
 ##Compare
