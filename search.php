@@ -119,8 +119,8 @@ if (isset($_GET["Summoner"]) && isset($_GET["Region"]))
                   <input type="hidden" value="<?php echo $_GET["Region"]; ?>" name="Region"></input>
 
                   <select class="form-control" onchange="this.form.submit()" name="Sort">
-
-                    <option value="" <?php if ($_GET["Sort"] == "") { echo "selected=\"selected\""; }?>>Sort by Highest Score</option>
+                    <option value="" <?php if ($_GET["Sort"] == "") { echo "selected=\"selected\""; }?>>Sort by Level</option>
+                    <option value="pointsDESC" <?php if ($_GET["Sort"] == "pointsDESC") { echo "selected=\"selected\""; }?>>Sort by Highest Score</option>
                     <option value="points" <?php if ($_GET["Sort"] == "points") { echo "selected=\"selected\""; }?>>Sort by Lowest Score</option>
                     <option value="lastPlayTimeDESC" <?php if ($_GET["Sort"] == "lastPlayTimeDESC") { echo "selected=\"selected\""; }?>>Sort by Last Played</option>
                     <option value="lastPlayTime" <?php if ($_GET["Sort"] == "lastPlayTime") { echo "selected=\"selected\""; }?>>Sort by not played for longest time</option>
@@ -241,6 +241,23 @@ if (isset($_GET["Summoner"]) && isset($_GET["Region"]))
     }
     array_multisort($raw, $order, $SummonerData->Champions);
   }
+  else
+  {
+    $sort = 'level';
+
+    $order = SORT_DESC;
+
+    //orders with the specified sorting
+    $level = array();
+    $points = array();
+
+    $previousLevel = 0;
+    foreach ($SummonerData->Champions as $key => $row) {
+      $level[$key]  = $row['level'];
+      $points[$key] = $row['points'];
+    }
+    array_multisort($level, $order, $points, $order, $SummonerData->Champions);
+  }
 
   $firstChampionID = $SummonerData->Champions[0]['id'];
 
@@ -269,11 +286,11 @@ if (isset($_GET["Summoner"]) && isset($_GET["Region"]))
     if (isset($champion['name']) && $isValid)
     {
 
-      //Dirty fix to the new Level System while the new API is not released
-      if ($champion['level'] == 6 || $champion['level'] == 7)
+      //Dirty fix to the new Level System while the new API is not released DISABLED
+      /*if ($champion['level'] == 6 || $champion['level'] == 7)
       {
         $champion['level'] = 5;
-      }
+      }*/
 
       if ($col == 0)
       {
@@ -308,11 +325,11 @@ if (isset($_GET["Summoner"]) && isset($_GET["Region"]))
 
                 <?php
                 //If level is level 5 then it will show a big gold number of champion points
-                if ($champion['level'] == 5)
+                if ($champion['level'] >= 5)
                 {
                   ?>
 
-                  <h2 class="level5" style="margin-top:5px;"><?php echo getPoints($champion['points']); ?></h2>
+                  <h2 class="level<?php echo $champion['level']; ?>" style="margin-top:5px;"><?php echo getPoints($champion['points']); ?></h2>
 
                   <?php
                 }
@@ -338,7 +355,7 @@ if (isset($_GET["Summoner"]) && isset($_GET["Region"]))
                   echo $champion['points'] . " total champion points</br>";
                 }
                 //If level is not five then it will show how many points left to reach next level
-                if ($champion['level'] != 5)
+                if ($champion['level'] < 5)
                 {
                   echo $champion['championPointsUntilNextLevel'] . " points until next level</br>";
                 }

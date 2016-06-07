@@ -830,8 +830,18 @@ function showStatistics($id, $name)
      gradient5.addColorStop(0, '<?php echo getColor(5); ?>');
      gradient5.addColorStop(1, '<?php echo getColor2(5); ?>');
 
+     var gradient6 = ctx1.createLinearGradient(0,0,0,180);
+     gradient6.addColorStop(0, '<?php echo getColor(6); ?>');
+     gradient6.addColorStop(1, '<?php echo getColor2(6); ?>');
+
+     var gradient7 = ctx1.createLinearGradient(0,0,0,180);
+     gradient7.addColorStop(0, '<?php echo getColor(7); ?>');
+     gradient7.addColorStop(1, '<?php echo getColor2(7); ?>');
+
      var data = {
      labels: [
+       "Level 7",
+       "Level 6",
      "Level 5",
      "Level 4",
      "Level 3",
@@ -841,8 +851,10 @@ function showStatistics($id, $name)
      ],
      datasets: [
      {
-     data: [<?php echo $stats['percentageOfLevels'][5];?>, <?php echo $stats['percentageOfLevels'][4];?>, <?php echo $stats['percentageOfLevels'][3];?>, <?php echo $stats['percentageOfLevels'][2];?>, <?php echo $stats['percentageOfLevels'][1];?>],
+     data: [<?php echo $stats['percentageOfLevels'][7];?>,<?php echo $stats['percentageOfLevels'][6];?>,<?php echo $stats['percentageOfLevels'][5];?>, <?php echo $stats['percentageOfLevels'][4];?>, <?php echo $stats['percentageOfLevels'][3];?>, <?php echo $stats['percentageOfLevels'][2];?>, <?php echo $stats['percentageOfLevels'][1];?>],
      backgroundColor: [
+       gradient7,
+       gradient6,
      gradient5,
      gradient4,
      gradient3,
@@ -850,6 +862,8 @@ function showStatistics($id, $name)
      "rgba(33,33,33,1)"
      ],
      hoverBackgroundColor: [
+       gradient7,
+       gradient6,
      gradient5,
      gradient4,
      gradient3,
@@ -872,8 +886,6 @@ function showStatistics($id, $name)
      }
      });
      </script>
-
-
    </div>
  </div>
  </div>

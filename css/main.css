@@ -815,6 +815,14 @@ img {
   color: #dbb365;
   margin-bottom: 0px; }
 
+.levelinfo h2.level6 {
+  color: #B331B9;
+  margin-bottom: 0px; }
+
+.levelinfo h2.level7 {
+  color: #54BDB6;
+  margin-bottom: 0px; }
+
 .levelinfo a {
   font-size: 20px;
   margin-bottom: 20px; }
@@ -840,6 +848,14 @@ img {
   margin-left: auto;
   margin-right: auto;
   vertical-align: middle; }
+
+.round.level7 {
+  background: linear-gradient(#54BDB6, #257572);
+}
+
+.round.level6 {
+  background: linear-gradient(#B331B9, #7B227E);
+}
 
 .round.level5 {
   background: linear-gradient(#dbb365, #96702a); }
@@ -869,6 +885,14 @@ span.level5 {
   color: #dbb365;
   background: none; }
 
+span.level6 {
+  color: #B331B9;
+  background: none; }
+
+span.level7 {
+  color: #54BDB6;
+  background: none; }
+
 a.level2, a.level1 {
   color: #fff;
   background: none; }
@@ -883,6 +907,14 @@ a.level4 {
 
 a.level5 {
   color: #dbb365;
+  background: none; }
+
+a.level6 {
+  color: #B331B9;
+  background: none; }
+
+a.level7 {
+  color: #54BDB6;
   background: none; }
 
 .parent {

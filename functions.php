@@ -258,7 +258,15 @@ function getGradeValue ($grade) {
 //returns the right color for this champion level
 function getColor ($level)
 {
-  if ($level == "5")
+  if ($level == "7")
+  {
+    return "#54BDB6";
+  }
+  else if ($level == "6")
+  {
+    return "#B331B9";
+  }
+  else if ($level == "5")
   {
     return "#dbb365";
   }
@@ -278,7 +286,15 @@ function getColor ($level)
 //returns the right color for this champion level
 function getColor2 ($level)
 {
-  if ($level == "5")
+  if ($level == "7")
+  {
+    return "#257572";
+  }
+  else if ($level == "6")
+  {
+    return "#7B227E";
+  }
+  else if ($level == "5")
   {
     return "#96702a";
   }
@@ -305,7 +321,9 @@ function getLevelTitle ($level, $maintag)
     2 => "Prowler",
     3 => "Cutthroat",
     4 => "Reaper",
-    5 => "Slayer"
+    5 => "Slayer",
+    6 => "Executioner",
+    7 => "Deathmaster"
   ),
 
   "Fighter" => array(
@@ -313,7 +331,9 @@ function getLevelTitle ($level, $maintag)
     2 => "Brawler",
     3 => "Warrior",
     4 => "Veteran",
-    5 => "Destroyer"
+    5 => "Destroyer",
+    6 => "Warmonger",
+    7 => "Warlord"
   ),
 
   "Mage" => array(
@@ -321,7 +341,9 @@ function getLevelTitle ($level, $maintag)
     2 => "Conjurer",
     3 => "Invoker",
     4 => "Magus",
-    5 => "Warlock"
+    5 => "Warlock",
+    6 => "Sorcerer",
+    7 => "Archmage"
   ),
 
   "Marksman" => array(
@@ -329,7 +351,9 @@ function getLevelTitle ($level, $maintag)
     2 => "Strider",
     3 => "Scout",
     4 => "Ranger",
-    5 => "Pathfinder"
+    5 => "Pathfinder",
+    6 => "Sharpshooter",
+    7 => "Sniper"
   ),
 
   "Support" => array(
@@ -337,7 +361,9 @@ function getLevelTitle ($level, $maintag)
     2 => "Protector",
     3 => "Keeper",
     4 => "Defender",
-    5 => "Guardian"
+    5 => "Guardian",
+    6 => "Sentinel",
+    7 => "Warden"
   ),
 
   "Tank" => array(
@@ -345,7 +371,9 @@ function getLevelTitle ($level, $maintag)
     2 => "Bruiser",
     3 => "Bulward",
     4 => "Enforcer",
-    5 => "Brute"
+    5 => "Brute",
+    6 => "Colossus",
+    7 => "Juggernaut"
   )
 
 );

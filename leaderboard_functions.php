@@ -89,7 +89,7 @@ function ChampionStats($id)
   //Calculates percentage of Levels
   $percentageOfLevels = array();
 
-  for ($i = 1; $i <= 5; $i++)
+  for ($i = 1; $i <= 7; $i++)
   {
     $percentageOfLevels[$i] = round(($levels[$i] / $ownschampion) * 100, 2);
   }
